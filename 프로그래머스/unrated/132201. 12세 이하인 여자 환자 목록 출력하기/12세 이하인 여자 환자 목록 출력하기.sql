@@ -5,7 +5,7 @@ SELECT PT_NAME
      , CASE
            WHEN TLNO IS NULL THEN 'NONE'
            ELSE TLNO
-        END TLNO
+       END TLNO
 FROM   PATIENT
 WHERE  GEND_CD = 'W'
 AND    AGE <= 12
