@@ -1,5 +1,5 @@
 class Solution {
-    public static int[] solution(int numer1, int denom1, int numer2, int denom2) {
+    public int[] solution(int numer1, int denom1, int numer2, int denom2) {
 		int[] answer = new int[2];
 
 		/******************************
@@ -19,7 +19,7 @@ class Solution {
 		return answer;
 	}
 
-	public static int gcd(int a, int b) {
+	public int gcd(int a, int b) {
 		if (b > a)
 			return gcd(b, a);
 
