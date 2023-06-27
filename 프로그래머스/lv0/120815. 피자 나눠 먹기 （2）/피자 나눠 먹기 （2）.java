@@ -1,8 +1,12 @@
 class Solution {
 	public int solution(int n) {
-		int pieces = n * 6 / gcd(n, 6);
-
-		return pieces / 6;
+        /******************************
+         *             ∣ab∣
+         * lcm(a,b)= ────────
+         *           gcd(a,b)
+         ******************************/
+        
+		return n * 6 / gcd(n, 6) / 6;
 	}
 
 	public int gcd(int a, int b) {
