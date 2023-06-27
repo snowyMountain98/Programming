@@ -13,8 +13,8 @@ class Solution {
 				max = map.get(key);
 				answer = key;
 			}
-            /* 최빈값이 여러 개면 -1 */
-            else if (max == map.get(key)) {
+			/* 최빈값이 여러 개면 -1 */
+			else if (max == map.get(key)) {
 				max = map.get(key);
 				answer = -1;
 			}
