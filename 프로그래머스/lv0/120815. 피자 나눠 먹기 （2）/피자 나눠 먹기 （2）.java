@@ -1,9 +1,9 @@
 class Solution {
 	public int solution(int n) {
         /******************************
-         *             ∣ab∣
-         * lcm(a,b)= ────────
-         *           gcd(a,b)
+         *              ∣ab∣
+         * lcm(a,b) = ────────
+         *            gcd(a,b)
          ******************************/
         
 		return n * 6 / gcd(n, 6) / 6;
