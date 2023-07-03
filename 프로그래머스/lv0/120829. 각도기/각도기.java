@@ -1,12 +1,12 @@
 class Solution {
 	public int solution(int angle) {
-		if (angle == 180)		// 평각
+		if (angle == 180)
 			return 4;
-		else if (angle > 90)	// 둔각
+		else if (angle > 90)
 			return 3;
-		else if (angle == 90)	// 직각
+		else if (angle == 90)
 			return 2;
-		else					// 예각
+		else
 			return 1;
 	}
 }
