@@ -1,25 +1,25 @@
 class Solution {
-	public static int solution(int balls, int share) {
-		long dnm = 1, nmr = 1;
+	public int solution(int balls, int share) {
+		return C(balls, share);
+	}
 
-		/* nCr = nC(n-r) */
-		if (share > balls - share)
-			share = balls - share;
-
-		if (share == 0)
+    
+	public int C(int n, int r) {
+		/********************
+		 * nC0 = 1, nCn = 1
+		 ********************/
+		if (n == r || r == 0)
 			return 1;
 
-		for (int i = 1, j = balls; i <= share; i++, j--) {
-			nmr *= j; // 분자
-			dnm *= i; // 분모
+		/********************
+		 * nC1 = n
+		 ********************/
+		if (r == 1)
+			return n;
 
-            /* 약분 */
-			if (nmr % dnm == 0) {
-				nmr /= dnm;
-				dnm = 1;
-			}
-		}
-
-		return (int) (nmr / dnm);
+		/****************************************
+		 * nCr = n-1Cr-1 + n-1Cr (0 <= r <= n)
+		 ****************************************/
+		return C(n - 1, r - 1) + C(n - 1, r);
 	}
 }
