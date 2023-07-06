@@ -7,7 +7,7 @@ class Solution {
 			for (int i = 1; i < answer.length; i++)
 				answer[i] = numbers[i - 1];
 		} else if (direction.equals("left")) {
-            answer[answer.length - 1] = numbers[0];
+			answer[answer.length - 1] = numbers[0];
 			for (int i = 0; i < answer.length - 1; i++)
 				answer[i] = numbers[i + 1];
 		}
