@@ -3,7 +3,7 @@ class Solution {
 		int i = 0, fct = 1;
 
 		do {
-            i++;
+			i++;
 			fct *= i;
 		} while (fct * (i + 1) <= n);
 
