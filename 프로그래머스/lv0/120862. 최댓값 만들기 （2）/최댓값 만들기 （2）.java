@@ -1,13 +1,9 @@
+import java.util.Arrays;
+
 class Solution {
 	public int solution(int[] numbers) {
-		int answer = Integer.MIN_VALUE;
+		Arrays.sort(numbers);
 
-		for (int i = 0; i < numbers.length; i++) {
-			for (int j = i + 1; j < numbers.length; j++)
-				if (answer < numbers[i] * numbers[j])
-					answer = numbers[i] * numbers[j];
-		}
-
-		return answer;
+		return Math.max(numbers[0] * numbers[1], numbers[numbers.length - 2] * numbers[numbers.length - 1]);
 	}
 }
