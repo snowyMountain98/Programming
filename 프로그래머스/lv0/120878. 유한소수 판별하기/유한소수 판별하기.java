@@ -5,12 +5,11 @@ class Solution {
 		a /= gcd;
 		b /= gcd;
 
-		while (b % 2 == 0 || b % 5 == 0) {
-			if (b % 2 == 0)
-				b /= 2;
-			else if (b % 5 == 0)
-				b /= 5;
-		}
+		while (b % 2 == 0)
+			b /= 2;
+
+		while (b % 5 == 0)
+			b /= 5;
 
 		if (b != 1)
 			return 2;
