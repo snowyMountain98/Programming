@@ -2,18 +2,18 @@ import java.util.Arrays;
 import java.util.Collections;
 
 class Solution {
-	public int[] solution(int[][] score) {
+	public static int[] solution(int[][] score) {
 		int[] answer = new int[score.length];
-		Double[] avg = new Double[score.length];
+		Integer[] avg = new Integer[score.length];
 
 		for (int i = 0; i < score.length; i++)
-			avg[i] = ((double) score[i][0] + score[i][1]) / 2;
+			avg[i] = score[i][0] + score[i][1];
 
 		Arrays.sort(avg, Collections.reverseOrder());
 
 		for (int i = 0; i < score.length; i++) {
 			for (int j = 0; j < avg.length; j++)
-				if ((double) (score[i][0] + score[i][1]) / 2 == avg[j]) {
+				if (score[i][0] + score[i][1] == avg[j]) {
 					answer[i] = j + 1;
 					break;
 				}
