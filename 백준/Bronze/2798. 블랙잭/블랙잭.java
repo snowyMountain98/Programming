@@ -10,8 +10,8 @@ public class Main {
 
 		n = scn.nextInt();
 		m = scn.nextInt();
+		
 		card = new int[n];
-
 		for (int i = 0; i < n; i++)
 			card[i] = scn.nextInt();
 
