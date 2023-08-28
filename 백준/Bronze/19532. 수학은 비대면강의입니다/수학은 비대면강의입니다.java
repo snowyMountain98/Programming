@@ -4,7 +4,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
-		long a, b, c, d, e, f;
+		int a, b, c, d, e, f;
 
 		a = scn.nextInt();
 		b = scn.nextInt();
