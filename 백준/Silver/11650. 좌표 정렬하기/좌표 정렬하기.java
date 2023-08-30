@@ -21,7 +21,7 @@ public class Main {
 		Arrays.sort(crd, new Comparator<int[]>() {
 			public int compare(int[] a, int[] b) {
 				/******************************
-				 * 0				if x == y
+				 * 0			if x == y
 				 * less than 0		if x < y 
 				 * greater than 0	if x > y
 				 ******************************/
