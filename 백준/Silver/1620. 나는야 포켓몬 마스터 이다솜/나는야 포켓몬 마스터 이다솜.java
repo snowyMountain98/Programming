@@ -24,8 +24,8 @@ public class Main {
 
 		for (int i = 0; i < n; i++) {
 			pokemon = br.readLine();
-			name.put(Integer.toString(i + 1), pokemon);
-			num.put(pokemon, Integer.toString(i + 1));
+			name.put(Integer.toString(i + 1), pokemon);	// <번호, 이름>
+			num.put(pokemon, Integer.toString(i + 1));	// <이름, 번호>
 		}
 
 		for (int i = 0; i < m; i++) {
