@@ -13,7 +13,7 @@ public class Main {
 		b2 = scn.nextInt();
 
 		nmr = a1 * b2 + a2 * b1;	// 분모
-		dnm = b1 * b2;				// 분자
+		dnm = b1 * b2;			// 분자
 
 		gcm = Euclidean(nmr, dnm);
 
