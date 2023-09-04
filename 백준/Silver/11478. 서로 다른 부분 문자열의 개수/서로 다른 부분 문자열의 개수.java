@@ -3,7 +3,7 @@ import java.util.*;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 		Set<String> prtStr = new HashSet<>();
 		String s;
