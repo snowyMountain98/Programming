@@ -17,7 +17,7 @@ public class Main {
 			result = "YES";
 
 			CHECK:
-            for (int i = 0; i < ps.length(); i++) {
+			for (int i = 0; i < ps.length(); i++) {
 				switch (ps.charAt(i)) {
 				case '(':
 					stack.push('(');
