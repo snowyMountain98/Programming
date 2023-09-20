@@ -33,7 +33,6 @@ public class Main {
 		for (int row = 0; row < 9; row++) {
 			for (int col = 0; col < 9; col++) {
 				if (sudoku[row][col] == 0) {
-
 					CHECK:
 					for (int num = 1; num <= 9; num++) {
 						/* 가로, 세로 */
