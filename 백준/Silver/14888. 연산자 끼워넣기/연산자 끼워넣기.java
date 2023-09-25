@@ -18,8 +18,7 @@ public class Main {
 		for (int i = 0; i < 4; i++)
 			operator[i] = scn.nextInt();
 
-		if (a.length > 1)
-			insertOperator(a[0], 1);
+		insertOperator(a[0], 1);
 
 		System.out.println(max + "\n" + min);
 	}
