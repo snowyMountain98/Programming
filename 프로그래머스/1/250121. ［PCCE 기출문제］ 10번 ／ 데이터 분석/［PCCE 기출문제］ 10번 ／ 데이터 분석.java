@@ -34,7 +34,7 @@ class Solution {
 			}
 		});
 
-        answer = new int[lst.size()][4];
+		answer = new int[lst.size()][4];
 		for (int i = 0; i < lst.size(); i++)
 			answer[i] = lst.get(i);
 
