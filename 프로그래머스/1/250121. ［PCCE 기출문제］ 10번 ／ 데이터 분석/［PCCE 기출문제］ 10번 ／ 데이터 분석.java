@@ -17,7 +17,7 @@ class Solution {
 		idx.put("remain", 3);
 
 		for (int i = 0; i < data.length; i++) {
-			/* ext 값이 val_ext보다 작은 데이터만 뽑 */
+			/* ext 값이 val_ext보다 작은 데이터만 뽑음 */
 			if (data[i][idx.get(ext)] < val_ext)
 				lst.add(data[i]);
 		}
