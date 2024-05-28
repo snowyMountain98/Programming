@@ -31,9 +31,9 @@ public class Main {
 		/* 0과 1이 섞여 있으면 */
 		else {
 			sb.append("(");
-			cmprs(x, y, size / 2);								// 왼쪽 위
-			cmprs(x, y + (size / 2), size / 2);					// 오른쪽 위
-			cmprs(x + (size / 2), y, size / 2);					// 왼쪽 아래
+			cmprs(x, y, size / 2);					// 왼쪽 위
+			cmprs(x, y + (size / 2), size / 2);			// 오른쪽 위
+			cmprs(x + (size / 2), y, size / 2);			// 왼쪽 아래
 			cmprs(x + (size / 2), y + (size / 2), size / 2);	// 오른쪽 아래
 			sb.append(")");
 		}
