@@ -37,7 +37,7 @@ public class Main {
 		 * 15 22     81 118     435 634     337 406 
 		 **************************************************/
 
-        for (int i = 0; i < N; i++) {
+		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < N; j++)
 				bw.write(rslt[i][j] + " ");
 			bw.write("\n");
