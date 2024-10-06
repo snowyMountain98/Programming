@@ -12,6 +12,7 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		PriorityQueue<Integer> pQ;
+		int N, x;
 
 		pQ = new PriorityQueue<>(new Comparator<Integer>() {
 			@Override
@@ -24,7 +25,6 @@ public class Main {
 					return Math.abs(o1) - Math.abs(o2);
 			}
 		});
-		int N, x;
 
 		N = Integer.parseInt(br.readLine());
 
