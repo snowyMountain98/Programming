@@ -13,7 +13,7 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		String str;
-		int n = 0, c = 0;			// n: 일반 구역 수, c: 적록색약 구역 수
+		int n = 0, c = 0;		// n: 일반 구역 수, c: 적록색약 구역 수
 		char[][] nrml, colorWkns;	// nrml: 일반 그림, colorWkns: 적록색약 그림
 
 		N = Integer.parseInt(br.readLine());
@@ -32,12 +32,12 @@ public class Main {
 		}
 		
 		/**************************************************
-		 * nrml :				colorWkns :
-		 * [R, R, R, B, B]		[R, R, R, B, B]
-		 * [G, G, B, B, B]		[R, R, B, B, B]
-		 * [B, B, B, R, R]		[B, B, B, R, R]
-		 * [B, B, R, R, R]		[B, B, R, R, R]
-		 * [R, R, R, R, R]		[R, R, R, R, R]
+		 * nrml :		colorWkns :
+		 * [R, R, R, B, B]	[R, R, R, B, B]
+		 * [G, G, B, B, B]	[R, R, B, B, B]
+		 * [B, B, B, R, R]	[B, B, B, R, R]
+		 * [B, B, R, R, R]	[B, B, R, R, R]
+		 * [R, R, R, R, R]	[R, R, R, R, R]
 		 **************************************************/
 
 		/* 일반 구역 수 계산 */
