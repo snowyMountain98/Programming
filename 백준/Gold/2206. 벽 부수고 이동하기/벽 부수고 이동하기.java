@@ -13,8 +13,8 @@ public class Main {
 		int x, y, dstnc, wall;
 
 		public Lctn(int x, int y, int dstnc, int wall) {
-			this.x = x;			// x 좌표
-			this.y = y;			// y 좌표
+			this.x = x;		// x 좌표
+			this.y = y;		// y 좌표
 			this.dstnc = dstnc;	// 현재까지 이동 거리
 			this.wall = wall;	// 벽을 부쉈는지 여부 (0: 안 부숨, 1: 부숨)
 		}
