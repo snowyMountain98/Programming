@@ -29,7 +29,7 @@ public class Main {
 				bw.write(n * 2 - 1 + "\n");
 			if (n * n < d && d <= n * (n + 1))
 				bw.write(n * 2 + "\n");
-			else if (n * (n + 1) < d && d <= (n + 1) * (n + 1))
+			else if (n * (n + 1) < d && d < (n + 1) * (n + 1))
 				bw.write(n * 2 + 1 + "\n");
 
 			bw.flush();
