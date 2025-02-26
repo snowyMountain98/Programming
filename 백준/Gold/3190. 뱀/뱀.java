@@ -75,13 +75,13 @@ public class Main {
 		/* 다음 위치에 사과가 있으면 */
 		if (board[ny][nx] == 1) {
 			snake.offer(new int[] { ny, nx });	// 뱀의 몸 길이 증가
-			board[ny][nx] = 0;					// 사과 제거
+			board[ny][nx] = 0;			// 사과 제거
 			dfs(nx, ny, sec + 1, d);
 		}
 		/* 다음 위치에 사과가 없으면 */
 		else {
 			snake.offer(new int[] { ny, nx });	// 뱀이 이동
-			snake.poll();						// 꼬리를 제거하여 길이를 유지
+			snake.poll();				// 꼬리를 제거하여 길이를 유지
 			dfs(nx, ny, sec + 1, d);
 		}
 
