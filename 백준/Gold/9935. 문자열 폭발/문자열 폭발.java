@@ -23,7 +23,7 @@ public class Main {
 			int len = bomb.length();
 			int size = stack.size();
 
-			/*스택의 크기가 폭발 문자열보다 크거나 같을 때*/
+			/* 스택의 크기가 폭발 문자열보다 크거나 같을 때 */
 			/* 폭발 문자열이 포함되어 있는지 확인 */
 			if (size >= len) {
 				boolean hasBomb = true;
